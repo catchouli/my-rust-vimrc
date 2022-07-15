@@ -1,3 +1,4 @@
 {
-  "rust-analyzer.checkOnSave.command": "build"
+  "rust-analyzer.checkOnSave.command": "check",
+  "diagnostic.virtualText": true
 }
