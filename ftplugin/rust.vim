@@ -7,13 +7,13 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gl :!cargo run<CR>
 
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>f  <Plug>(coc-fix-current)
 
 " Use `[g` and `]g` to navigate diagnostics
 " " Use `:CocDiagnostics` to get all diagnostics of current buffer in location
 " list.
-nmap <Leader>qg <Plug>(coc-diagnostic-prev)
-nmap <Leader>qc <Plug>(coc-diagnostic-next)
+nmap <Leader>g <Plug>(coc-diagnostic-prev)
+nmap <Leader>c <Plug>(coc-diagnostic-next)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
