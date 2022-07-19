@@ -4,7 +4,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-nmap <silent> gl :!cargo run<CR>
+nmap <silent> gl :w<CR>:!cargo run<CR>
 
 " Apply AutoFix to problem on the current line.
 nmap <leader>f  <Plug>(coc-fix-current)
