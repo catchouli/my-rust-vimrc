@@ -24,6 +24,7 @@ call plug#end()
 
 " Stop build directories showing up in ctrlp etc
 set wildignore+=*\\target\\**
+set wildignore+=*\\dist\\**
 
 " Number
 set number
@@ -32,4 +33,7 @@ set relativenumber
 " Clear search highlight
 nnoremap <CR> :noh<CR>
 
-" vim-airline
+" Default tab settings...
+set expandtab
+set shiftwidth=4
+set tabstop=4
