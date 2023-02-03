@@ -23,8 +23,7 @@ Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 " Stop build directories showing up in ctrlp etc
-set wildignore+=*\\target\\**
-set wildignore+=*\\dist\\**
+set wildignore+=*\\target/**,*/target/**,*\\dist\\**,*\dist\**
 
 " Number
 set number
@@ -37,3 +36,11 @@ nnoremap <CR> :noh<CR>
 set expandtab
 set shiftwidth=4
 set tabstop=4
+
+let mapleader=","
+
+if has('nvim')
+    tnoremap <Esc> <C-\><C-n>
+    au TermOpen  * setlocal nonumber | startinsert
+    au TermClose * setlocal   number | call feedkeys("\<C-\>\<C-n>")
+endif
